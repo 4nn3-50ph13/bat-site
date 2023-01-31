@@ -2,6 +2,7 @@
   "name": "bat-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://4nn3-50ph13.github.io/bat-site/",
   "dependencies": {
     "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.4.0",
@@ -31,7 +32,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "homepage": "https://4nn3-50ph13.github.io/bat-site/",
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
     "build": "react-scripts build",
