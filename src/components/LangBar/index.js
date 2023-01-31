@@ -32,7 +32,7 @@ i18n
     lng: "en",
     fallbackLng: "en",
     backend: {
-        loadPath: '/bat-site/public/assets/locales/{{lng}}/translation.json'
+        loadPath: 'https://4nn3-50ph13.github.io/bat-site/bat-site/public/assets/locales/{{lng}}/translation.json'
     },
     react: {useSuspense: false}
 });
