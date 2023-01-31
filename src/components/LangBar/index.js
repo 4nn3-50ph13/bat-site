@@ -6,7 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import i18next from 'i18next';
 import translationEN from "./locales/en/translation.json";
-import translationFR from "/../../../public/locales/fr/translation.json";
+import translationFR from "bat-site/public/locales/fr/translation.json";
 
 const resources = {
     en: {
