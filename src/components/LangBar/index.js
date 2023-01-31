@@ -5,7 +5,17 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import i18next from 'i18next';
+import translationEN from "./locales/en/translation.json";
+import translationFR from "./locales/fr/translation.json";
 
+const resources = {
+    en: {
+      translation: translationEN,
+    },
+    nl: {
+      translation: translationFR,
+    },
+   };
 
 const LangBar = ({isOpen, toggle}) => {
     function changeLang(code) {
@@ -32,8 +42,9 @@ i18n
 .init({
     lng: "en",
     fallbackLng: "en",
+    resources,
     backend: {
-        loadPath: '/../../../public/assets/locales/{{lng}}/translation.json'
+        loadPath: 'bat-site/public/assets/locales/{{lng}}/translation.json'
     },
     react: {useSuspense: false}
 });
