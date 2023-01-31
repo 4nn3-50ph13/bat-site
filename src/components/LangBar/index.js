@@ -5,8 +5,8 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import i18next from 'i18next';
-import translationEN from "bat-site/public/assets/locales/en/translation.json";
-import translationFR from "bat-site/public/assets/locales/fr/translation.json";
+import translationEN from "/bat-site/public/assets/locales/en/translation.json";
+import translationFR from "/bat-site/public/assets/locales/fr/translation.json";
 
 const resources = {
     en: {
@@ -44,7 +44,7 @@ i18n
     fallbackLng: "en",
     resources,
     backend: {
-        loadPath: 'bat-site/public/assets/locales/{{lng}}/translation.json'
+        loadPath: '/bat-site/public/assets/locales/{{lng}}/translation.json'
     },
     react: {useSuspense: false}
 });
