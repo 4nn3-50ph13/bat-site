@@ -33,7 +33,7 @@ i18n
     lng: "en",
     fallbackLng: "en",
     backend: {
-        loadPath: '/assets/locales/{{lng}}/translation.json'
+        loadPath: '/../../../public/assets/locales/{{lng}}/translation.json'
     },
     react: {useSuspense: false}
 });
